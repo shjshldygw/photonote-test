@@ -1,204 +1,157 @@
-
-
 <!DOCTYPE html>
-<html lang="" xmlns:v-bind="http://www.w3.org/1999/xhtml">
-
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <title>Tags: 讨论 - 摄影学习笔记</title>
-<meta charset="utf-8">
-<meta name="X-UA-Compatible" content="IE=edge">
-<meta name="author" content="Author">
-<meta name="description" content="Description">
-<meta name="keywords" content="">
-
-<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
-
+    <!-- so meta -->
     <meta charset="utf-8">
-    <meta name="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <meta content="telephone=no" name="format-detection">
-    <meta name="renderer" content="webkit">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/journal.css">
-<script src="/js/loadCSS.js"></script>
-<script>
-    loadCSS("https://fonts.googleapis.com/css?family=Montserrat|Anonymous+Pro:400|Material+Icons");
-    (function (d) {
-        var config = {
-                kitId: 'dwg1tuc',
-                scriptTimeout: 3000,
-                async: true
-            },
-            h = d.documentElement, t = setTimeout(function () {
-                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
-            s = d.getElementsByTagName("script")[0], a;
-        h.className += " wf-loading";
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-            a = this.readyState;
-            if (f || a && a != "complete" && a != "loaded") return;
-            f = true;
-            clearTimeout(t);
-            try {
-                Typekit.load(config)
-            } catch (e) {
-            }
-        };
-        s.parentNode.insertBefore(tk, s)
-    })(document);
-</script>
-<noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Anonymous+Pro:400|Material+Icons">
-</noscript>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="摄影学习笔记">
+<meta property="og:url" content="http://yoursite.com/tags/讨论/index.html">
+<meta property="og:site_name" content="摄影学习笔记">
+<meta property="og:description" content="Description">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="摄影学习笔记">
+<meta name="twitter:description" content="Description">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Tag: 讨论</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
 </head>
-<body>
-<div id="top"></div>
-<div id="app">
-<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
-    <div class="drawer-content">
-        <div class="drawer-menu">
-            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
-                Home
-            </a>
-            <a class="a-block drawer-menu-item false" href="/archives">
-                Archive
-            </a>
 
-            
-            
-
-            
-            <a class="a-block drawer-menu-item" href="/atom.xml">
-                RSS
-            </a>
-            
-        </div>
-    </div>
-</div>
-<transition name="fade">
-    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
-</transition>
-<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
-    <div ref="navBackground" class="nav-background"></div>
-    <div class="container container-narrow nav-content">
-        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
-            <i class="material-icons">
-                menu
-            </i>
-        </button>
-        <a ref="navTitle" class="navbar-brand" href="/">
-            摄影学习笔记
-        </a>
-    </div>
-</nav>
-<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
-    <a href="/">
-        <div class="single-column-header-title">摄影学习笔记</div>
-        <div class="single-column-header-subtitle">Description</div>
-    </a>
-</div>
-<div ref="sideContainer" class="side-container">
-    <a class="a-block nav-head false" href="/">
-        <div class="nav-title">
-            摄影学习笔记
-        </div>
-        <div class="nav-subtitle">
-            Photo Note
-        </div>
-    </a>
-
-    <div class="nav-link-list">
-        <a class="a-block no-tint nav-link-item false" href="/archives">
-            Archive
-        </a>
-
-        
-        
-
-        
-        <a class="a-block no-tint nav-link-item" href="/atom.xml">
-            RSS
-        </a>
-        
-    </div>
-
+<body class="max-width mx-auto px3 ltr">
     
-    <div class="nav-footer">
-        Proudly published with Hexo<br>
+    <div class="content index py4">
         
-        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
-        
-        &copy; 2018 <a href="http://yoursite.com">摄影学习笔记</a>
-    </div>
-</div>
-<div ref="extraContainer" class="extra-container">
-    <div class="pagination">
-        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
-            <i class="material-icons pagination-action-icon">
-                keyboard_arrow_up
-            </i>
-        </a>
-
-        
-        
-
-        
-
-        
-        
-    </div>
-</div>
-
-<div ref="streamContainer" class="stream-container">
-    <div class="post-list-container post-list-container-shadow">
-        <div class="post-item-wrapper post-item-wrapper-no-hover">
-            <div class="post-item post-item-no-gaps">
-                <div class="post-item-info-wrapper">
-                    <div class="post-item-title  post-item-title-small">
-                        <a href="/tags/">Tags</a> / 讨论
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="/2018/11/22/test/" class="a-block">
-            <div class="post-item-wrapper">
-                <div class="post-item post-item-no-gaps">
-                    <div class="post-item-info-wrapper">
-                        <div class="post-item-title">
-                            摄影与“谈论”
-                        </div>
-                        <div class="post-item-meta">
-                            2018-11-22
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-
-        
-    </div>
-
-    <div class="single-column-footer">
-    Proudly published with Hexo<br>
+          <header id="header">
+  <a href="/">
+  
     
-    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+      <div id="logo" style="background-image: url(/images/logo.png);"></div>
     
-    &copy; 2018 <a href="http://yoursite.com">摄影学习笔记</a>
-</div>
-</div>
+  
+    <div id="title">
+      <h1>摄影学习笔记</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+       
+        <li><a href="/">Home</a></li>
+       
+        <li><a href="/about/">About</a></li>
+       
+        <li><a href="/archives/">Writing</a></li>
+       
+        <li><a href="/projects_url">Projects</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+        
+        <div id="archive">
+  <ul class="post-list">
+    
+    
+    
+      
+      
+      
+      
+        <h2>2018</h2>
+      
+      <li class="post-item">
+        
+    <div class="meta">
+        <time datetime="2018-11-22T12:25:00.000Z" itemprop="datePublished">2018-11-22</time>
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2018/11/22/test/">摄影与“谈论”</a>
+    
+
+
+</span>
+      </li>
+    
+  </ul>
+  
 
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
-<script src="/js/journal.js"></script>
 
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Author
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
 </body>
 </html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+

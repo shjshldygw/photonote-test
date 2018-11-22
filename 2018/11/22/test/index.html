@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html lang="" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>摄影与“谈论” - 摄影学习笔记</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Author">
+<meta name="description" content="hell kitty：在开始拍照之初我就一直迫切地想跟人聊聊摄影，但是至今都常常有表达上的失落感。加入的摄影相关的...">
+<meta name="keywords" content="">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css">
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Montserrat|Anonymous+Pro:400|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://yoursite.com">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            摄影学习笔记
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">摄影学习笔记</div>
+        <div class="single-column-header-subtitle">Description</div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            摄影学习笔记
+        </div>
+        <div class="nav-subtitle">
+            Photo Note
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+
+        
+        <a class="a-block no-tint nav-link-item" href="/atom.xml">
+            RSS
+        </a>
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        Proudly published with Hexo<br>
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+        
+        &copy; 2018 <a href="http://yoursite.com">摄影学习笔记</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only" style="background-image: url('')">
+                <div class="post-title">
+                    摄影与“谈论”
+                    <div class="post-meta">
+                        <time datetime="2018-11-22T12:25:00.000Z" itemprop="datePublished">
+                            2018-11-22 20:25
+                        </time>&nbsp;
+                        
+                        
+                        <i class="material-icons" style="">folder</i>
+                        
+                        <a href="/categories/测试/">测试</a>
+                        
+                        
+
+                        
+                        
+                        <i class="material-icons" style="">label</i>
+                        
+                        <a href="/tags/摄影/">摄影</a>, 
+                        
+                        <a href="/tags/讨论/">讨论</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <h1 id="hell-kitty："><a href="#hell-kitty：" class="headerlink" title="hell kitty："></a>hell kitty：</h1><p>在开始拍照之初我就一直迫切地想跟人聊聊摄影，但是至今都常常有表达上的失落感。加入的摄影相关的微信群，大部分都不在讨论摄影。不是聊摄影器材，就是聊摄影事件，要么就是各路摄影师的八卦，展讯，摄影书等等。在网络上大家萍水相逢，大部分照片又没有好到能引起人注意的程度，似乎谈论的必要性都成了问题。我想最好的方式是几个拍照都不错的摄影师，坐在一起互相看看照片，又能说细节，还能说结构，甚至可以在选片上商量商量，这种完美的形式我至今未曾遇到。<br>完美的谈论，最为关键的因素我觉得有这些：一，要在拍照中产生一些个人化的感受。二，要找到合适的语言来表达这种感受，这种语言不能词不达意，不能太过于私人，也不能是一些陈词滥调。三，要有合适的互动对象。在摄影的理解上基本上要旗鼓相当，你要我对老法师和小清新谈摄影，基本不可能被理解。在这里又想到214想让更多的人来参与的观点，我觉得不是很乐观，有少数人感兴趣已经很不容易了，在感兴趣的人里产生理解互动，更是小概率事件。谈论摄影的人同为摄影师这一点我认为非常重要。在摄影类文章中，评论家写的是最无聊的，他们的感受很多时候来源于宏观而抽象的层面，或者说是很大程度上来自于语言而不是照片，比如摄影史，比如风格流派，这些东西对于照片来说甚至可以说是不及物的！谈论了半天，对于照片的直观感受反而是最不重要的。在摄影师的访谈，或者是摄影师写的评论文章中，我却能发现更多我关注的东西，比如拍摄这张照片的原因，如此对焦构图的理由，照片给人感官的刺圌激，照片与照片内在力量的平衡和调节，照片中隐晦和表现的分寸感，这些东西往往是不动手拍照的人视野之外的。比如乒乓对谈就是这样一本摄影师式的谈论。<br>最后一个问题常常使我困惑，也是有时阻止我发表看法的一个障碍。在谈论摄影时我往往对自己的文献和经典的阅读量感到羞愧，好像没有读过就没法确认自己的看法是否有意义，是否是在用自己生造的词汇谈论已有的概念，就比如说试图用很多话来描述景深是个什么玩意。可我又想感受这个东西正是理论触及不到的。谈论起来应该更有信心一点才是。</p>
+<h1 id="蔡骁："><a href="#蔡骁：" class="headerlink" title="蔡骁："></a>蔡骁：</h1><p>要谈，当然要谈。我们可能没有xxxx，但我们还没有谈论自圌由吗。</p>
+<p>但总感觉平日里听不到什么对摄影的谈论。也不知道别人在谈论摄影时都在谈些什么。还是说，也和我一样根本没在谈论？</p>
+<p>虽然经常在脑海中自己向自己阐述自己的摄影观，但时间久了，感觉自己一直是被软圌禁在自己的语言里，很久没得到新的营养注入。</p>
+<p>他人的几句偶然的建议，读过的文字中偶然的几句话，自己摄影上的契机都来自这些地方。自己一个人，再怎么闭门造车也见不到出路。</p>
+<p>但，为什么大家似乎都不那么愿意“谈论”摄影呢？</p>
+<p>可能很多人拍照，目的本身就是避开“谈论”，他本来就是为了“不谈论”才去拍照。<br>或许，这部分摄影，我们不该用喋喋不休去打扰它们吧。</p>
+<p>还有就是，谁都不想做“批评家”，我自己也是一样，不愿意谈自己的摄影。总觉得，很多东西一旦说出口、接触到空气，就会立刻风化掉。所以很害怕。</p>
+<p>不过，其实没必要害怕，因为一说出口就会风化的摄影，只说明它还不够优秀。况且语言可说的范围有限，总会剩余一些不可说的东西，需要实际看照片才能感受。</p>
+<h1 id="214-："><a href="#214-：" class="headerlink" title="214 ："></a>214 ：</h1><p>我先引用一段采访</p>
+<p>日本摄影评论家饭泽耕太郎访谈<br>原文出自《VOP摄影之声》#8<br>媒体 / 首先想请教，作为资深的摄影评论者，请问您认为摄影和评论的关系是什么？</p>
+<p>对于这个问题，我常这么回答，我认为摄影评论家的工作其实很像翻译家。为什么会这么说呢? 因为摄影家总是透过照片来表达自己的话语，但是他们在照片里诉说的话语，不见得能够传达给一般人。例如张照堂老师等人，他们以自己的话语诉说着什么，但他们的话语总是难以让人理解。因此，就像将英文翻译成日文，或者将法文翻译成中文一样，必须有翻译家存在，而这就是摄影评论家的角色。</p>
+<p>媒体 / 每个人对摄影都有不同的偏好，有些说法认为摄影并不需要被诠释，甚至反对诠释影像这件事，认为照片自己会说话，不需要用文字去描述它，您对这样的说法有什么响应呢？</p>
+<p>其实我并没有特别要将「看哪一本摄影集可以怎么样去思考」这样的想法强加于观者身上的意图，而是希望我的文字能对观者的想法有所帮助或是滋养，这样就好了。所以，我并不觉得我写的东西是一定正确的，那只不过是我所感受到，或者说是我所思考的事物，那些话语并非绝对。<br><a href="http://blog.sina.com.cn/s/blog_532bd99f0102emph.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_532bd99f0102emph.html</a></p>
+<p>谈论和这种专业评论是否一个概念？</p>
+<p>我想这个谈论不应该仅限于摄影批评家（评论家）。<br>刚刚问了身边的朋友：你觉得摄影应该不应该被谈论？<br>答：应该啊，你们摄影师不是谈了才能发现更好的东西吗？<br>那么又问：那么不是摄影师就不谈了吗？不是摄影师的群体为什么不谈呢？<br>答：因为大家不感兴趣啊。</p>
+<p>我想上述对话可能是一个方面，就是大众对摄影的惯性冷漠（摄影往往作为一种功能去辅佐其他东西）以及不懂摄影的某部分“语言”。<br>还有个原因就是，大家光是生存就耗费了很多精力，没有其余精力再去思考谈论。</p>
+<p>我们经常觉得说破就不美了，美存在于暧昧中，朦朦胧胧中，似懂非懂中，一谈破就觉得啊~不就那么回事，你说这是不是破坏某些摄影的美圌感，我想是的。<br>但是一旦谈不破，似乎又很丢脸了。<br>就像前段访谈说的，每个人的感受是不一样，说出感受就行，谈论先从感受开始，谁也不能说感受有错。</p>
+<p>说到底，我是希望更多人参与摄影，享受摄影，聊摄影，最好是再聊得直白点，通俗点。</p>
+<h1 id="蔡骁：-1"><a href="#蔡骁：-1" class="headerlink" title="蔡骁："></a>蔡骁：</h1><p>确实，看照片的人，大体都是自己也拍照片的人。拍腻了之后，也就不再看照片了。<br>可能大家都经历这个循环，然后总数量大体保持稳定，因为源源不断的有进有出。<br>不过现在拍照的门槛越来越低，拿手机就能拍，参与拍照洪流的人估计会越来越多。即使只有拍照的人看照片，事情也不那么悲观。</p>
+<p>（还联想到另一个主题，“专业”拍照者在做摄影作品时，他的“目标人群”是谁。有些人希望只有“懂他”的人来看就行了，其他人都是面目可憎的“批评家”。但除此之外，或许还可以有其他种类，另一种野心，比如，专门拍照给“对‘摄影’不感兴趣”的人看，给“不拍照”的人看，努力去引起“不懂自己”的人的兴趣。这种努力可能看起来有点贱，所以大家都没兴趣尝试。）</p>
+<p>还有就是，确实，“自己不拍照”的人，挺难看“懂”照片的。每个人对“懂”的理解也不一样。但如果“自己不拍照”，确实，在看一组照片，或看一个摄影作品时，从中得到观看的乐趣的可能性、对它产生兴趣的可能性都要低一些。毕竟，摄影也算是“一门语言”，自己没使用过这语言，也不容易听懂用它讲的故事。</p>
+<p>在国内，不大可能期望“普通老百姓”去谈论什么“摄影”。一是摄影这个概念尚未被澄清，二是确实没人有那个闲工夫。不仅没人谈论摄影，别的东西也不见得有多少谈论。不过这个应该无所谓吧。圈里人先谈起来就算不错。</p>
+<p>214 ：</p>
+<p>关于“能不能看懂”这个问题，我认为有以下的方面：</p>
+<p>1，大家被现在的一些固定模式困住了，觉得什么类型的照片就该怎么样，一旦不是这个模式的，他们就看不懂了，比如说，人物写圌真就得是pose+逆光（之类的），你在人物写圌真里插入风景，就觉得：诶~~~~什么意思？看不懂。</p>
+<p>2，有的摄影起点就比较高，因为结合了其他媒介，比如需要有文本辅助，需要其他多媒体参与，甚至还要有艺术知识作为背景。这些从一开始的受众群就不是大众。</p>
+<p>3，本来生活中就缺少观察的概念，摄影从观察中提取，观看者自身在生活中忽视的东西，也许在看作品的时候，仍然会选择（或者下意识）忽视，（当然肯定有被作品醍醐灌醒的可能）</p>
+<p>暂时想到这些，大家可以补充。</p>
+<p>还有一点，我经常也不懂一些作品，除了我比较钝感的原因以外，我想还有一个方面是，如果是展览或者是参赛获奖作品，从互联网上观看，一般完整的作品比较少放出来，大家看到的都是一个断面，自然会觉得看不懂了。<br>所以我自己就想互联网上（范围更广，速度更快，观看更方便）全放出来，又不借助其他媒介和文字，让照片去和根植在大家深处的一些审美进行共鸣。</p>
+<p>蔡骁：</p>
+<p>我觉得也不一定非得“看懂了”才可以谈论吧。似懂非懂，但又有所触动的时候，聊一聊说不定会给其他已经完全看懂了的人提供新的视角和思路。不过确实有很多时候，我是完全看不懂的。那也没法聊了，只能洗耳恭听。万一听着听着，就能看懂一点了呢。所以啊，为了那些完全看不懂的人，能看懂一点的人也应该尽量发声，否则就永远只有那么一小撮人才能“看懂”摄影作品。</p>
+<p>在网络上看不到作品的全貌，确实是个挺大的问题。网络一方面特别便利，同时在照片的“展示”上也有很多局限。在网络上的话，“作品”这个概念可能渐渐都要发生变化了。比如你的照片，从哪里开始到哪里结束，算是你的“摄影作品”呢？是你的微博整体吗？还是每一条9张一组的微博就是一个“摄影作品”呢？还是每一张照片本身，就是一个作品呢？不过这个问题也不用太纠结，作为谈论者，我们可以灵活应对：对于你的微博整体，我们可以聊你的摄影的整体风格等等；对于每一条9张一组的微博，我们可以聊这一小组照片的得失，选片、排序等等；对于一张一张具体的照片，我们可以像在画廊里站在一张照片面前时窃窃私语那样，嘀嘀咕咕各种评论。</p>
+<p>朱宝蕾：</p>
+<p>补充一点：<br>看不懂的问题，是观者所受教育和自身成长的问题。中国的问题是人文教育、美术史和审美教育的普遍阉割与缺失造成的艺盲现象，缺少独立的审美意识，只能看懂一些表面的浅层的表达，而看不懂更加个性化抽象化的作品。</p>
+<p>我认为“懂不懂”是个伪命题，你不可能完全看懂一张照片或一个作品。因为摄影，或者说艺术，是抽象的表达，对语言不可表达之物的表达，并没有量化的标准和评价体圌系。当你被照片中的影调节奏或构图方式，甚至是照片中的某一个色块所打动，感受到某种转瞬即逝的闪现时，你都可以说你看懂了。</p>
+<p>蔡骁：</p>
+<p>目前都有什么地方进行着关于摄影的谈论？</p>
+<p>1，美术院校的摄影专业，这个应该是重中之重吧。我自己是草根爱好者，不清楚院校里的谈论是什么样的。如果有知情的朋友，挺希望来介绍一下。我猜大概的形式是，每期一个主题由大家去拍照，上课时各自拿出自己的作品，大家彼此发表意见，进行讨论。个人觉得这是挺理想的方式。</p>
+<p>2，院校外的摄影爱好者，可以参加一些工作坊来获得参与讨论的机会。住大城市的朋友可能机会比较多，但不知道实际情况怎么样。</p>
+<p>3，其他类型的，比如约小姐妹去看个摄影展。看展的时候多少会聊一点。喜欢这张，不喜欢那张，之类的。</p>
+<p>4，朋友在一起聊天喝酒，可能会聊一点摄影。但除非是重度摄影爱好者，一般不会聊摄影本身。</p>
+<p>5，微信群里，多种多样的晒，有些会博得一阵喝彩。这些谈论更多是关于彼此的生活。</p>
+<p>6，社交媒体上发表照片/“摄影作品”，现在快成了生力军。</p>
+<p>社交媒体上的谈论，除转发和点赞之外，主要是回复评论。很多时候，对摄影作品/照片的谈论，被简化成了两个极端：感兴趣的、觉得好的，就点一下赞；不感兴趣的，觉得不好的，直接无视。处在这两极之间的，所谓“感想”很少被表述出来。社交媒体的完全/部分的开放性，也是原因之一。“感想”毕竟是私人的东西，小姐妹去看展览，发表感想几乎也是窃窃私语。在社交媒体这个公共空间里回复评论表达感想，就会不自主的变成半个“批评家”。</p>
+<p>可以理解。没人愿意当“批评家”，毕竟这个词现在已经成了骂人的词。那在网络的公共空间里，怎么表达感想才合适呢。谈些什么比较好呢。</p>
+<p>还是说，是否社交媒体这种公共空间本来就不适合谈论摄影。</p>
+<p>7，论坛本来是个挺好的平台。但现在没什么人在论坛上发照片了。或者说，摄影论坛也都转型做摄影的社交媒体平台了。</p>
+<p>8，博客也是个不错的平台。博客比个人主页好的地方是，可以在帖子（照片/摄影作品）下面添加评论。博客的困境跟社交媒体差不多（或许它本身也该划作社交媒体），就是评论中只能听到称赞的声音，听不到“批评”，这样也就没法形成“谈论”。</p>
+<p>朱宝蕾：</p>
+<p>一切都在无可避免地往娱乐化的趋势发展。社交媒体每时每刻更新着大量丰富的信息数据，人们忙于接收各种信息而无暇停留去做深入的思考和讨论。一方面它利于作品的传播，让更多人能看到你的作品。另一方面它阻碍人们更进一步地去探究问题。</p>
+<p>2017.6</p>
+
+                </div>
+            </div>
+
+            <nav class="post-pagination">
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2018/11/22/hello-world/">
+        Next post<br>Hello World
+    </a>
+    
+</nav>
+
+
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+    
+    &copy; 2018 <a href="http://yoursite.com">摄影学习笔记</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js"></script>
+
+
+
+
+
+</body>
+</html>
